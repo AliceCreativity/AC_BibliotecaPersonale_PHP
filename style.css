@@ -1,0 +1,67 @@
+/*** GENERALE ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+
+}
+
+
+/** formattazione **/
+
+.text-justify {
+    text-align: justify;
+}
+
+
+/** nav **/
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+/* effetto hover icone */
+
+a.navbar-brand,
+a.nav-link {
+    transition: transform 0.3s ease;
+} 
+
+a.navbar-brand:hover,
+a.nav-link:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+} 
+
+
+
+/*** LIBRI ***/
+
+/** tabella libri **/
+
+.tabellaLibri thead tr th:first-child {
+    min-width: 80px;
+}
+
+.tabellaLibri thead tr th.colIndicatore, 
+.tabellaLibri thead tr td.colIndicatore {
+    width: 30px;
+    text-align: center;
+}
+
+.tabellaLibri tbody tr td .titoloLibro:hover {
+    text-decoration: underline;
+}
+
+/* modale tabella libri */
+
+.modaleLibro {
+
+}
+
+
