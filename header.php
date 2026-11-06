@@ -98,16 +98,4 @@
 
         </nav>
 
-        <header>
-
-        	<h1 class="text-center mt-5 mb-4"> 
-        		Titolo pagina
-        	</h1>
-
-        </header>
-        
-        <main class="mb-4">
-
-            <div class="container d-flex flex-column">
-
          

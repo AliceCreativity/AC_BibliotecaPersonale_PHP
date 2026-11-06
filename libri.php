@@ -5,12 +5,24 @@
     include('modal.php');
 
 ?>
+        
+    <main class="mb-4">
+
+        <header>
+        
+            <h1 class="text-center mt-5 mb-4"> 
+            	Libri
+            </h1>
+        
+        </header>
+
+        <div class="container d-flex flex-column">
 
             <div class="col-lg-12 my-3 mx-auto text-justify">
 
                 <p>
                     Clicca sul nome del libro per vedere la copertina.
-                </p>
+               </p>
 
             </div>
 
@@ -34,7 +46,7 @@
                     </thead>
 
                     <tbody id="tBodytabellaLibri">
-                        
+
                         <tr>
                             <th scope="row">20.000</th>
                             <td>
@@ -49,7 +61,7 @@
                             <td class="colIndicatore">IT</td>
                             <td class="colIndicatore">V</td>
                         </tr>
-                        
+
                         <tr>
                             <th scope="row">30.000</th>
                             <td>
@@ -69,8 +81,11 @@
 
                 </table>
 
-            </div> 
+            </div>
 
+        </div> <!-- chiude container -->
+
+    </main>
 
 <?php
 

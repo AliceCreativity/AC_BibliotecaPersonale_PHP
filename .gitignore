@@ -1,4 +1,7 @@
 .env
-connection.php
-*_a.*
 
+config.php
+queries.php
+
+*_a.*
+_*

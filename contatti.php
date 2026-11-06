@@ -3,63 +3,74 @@
     require('header.php');
 
 ?>
+        
+    <main class="mb-4">
 
-    <div class="col-lg-12 my-3 mx-auto text-justify">
+        <header>
+        
+            <h1 class="text-center mt-5 mb-4"> 
+            	Libri
+            </h1>
+        
+        </header>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="container d-flex flex-column">
 
-            <div class="col">
-                <div class="card">
-                    <div class="card-content p-4">   
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
 
-                        <h3>
-                            Pagina Facebook
-                        </h3> 
+                <div class="col">
+                    <div class="card">
+                        <div class="card-content p-4">   
 
-                        <span>
-                            [Nome della pagina]
-                        </span>
+                            <h3>
+                                Pagina Facebook
+                            </h3> 
 
+                            <span>
+                                [Nome della pagina]
+                            </span>
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col">
-                <div class="card">
-                    <div class="card-content p-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-content p-4">
 
-                        <h3>
-                            Pagina Instagram
-                        </h3> 
+                            <h3>
+                                Pagina Instagram
+                            </h3> 
 
-                        <span>
-                            [Nome della pagina]
-                        </span>
+                            <span>
+                                [Nome della pagina]
+                            </span>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col">
-                <div class="card">
-                    <div class="card-content p-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-content p-4">
 
-                        <h3>
-                            E-mail
-                        </h3> 
+                            <h3>
+                                E-mail
+                            </h3> 
 
-                        <span>
-                            [email]
-                        </span>
+                            <span>
+                                [email]
+                            </span>
 
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
+        </div> <!-- chiude container -->
 
-    </div>
-
+    </main>
 
 <?php
 
