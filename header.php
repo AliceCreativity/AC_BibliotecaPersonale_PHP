@@ -32,9 +32,9 @@
 	
 	<meta charset="utf-8">
 
-	<title> Biblioteca Personale <?= $tipoPagina === 'home' ? '' : ' | ' . htmlspecialchars($pagina['Nome'], ENT_QUOTES, 'UTF-8') ?> </title>
+	<title> Biblioteca Personale </title>
 
-	<link rel="shortcut icon" href="img/favico.png" type="image/png" class="miniatura">
+	<link rel="shortcut icon" href="img/favico_darkred.png" type="image/png" class="miniatura">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -54,13 +54,13 @@
 
                 <div>
                     <div class="navbar-brand logo d-flex flex-row align-items-center">
-                        <img src="img/books1.png" alt="BrandName" class="me-2">
+                        <img src="img/brand_red.png" alt="BrandName" class="me-2">
                         <span class="fs-3 fw-medium text-wrap">Biblioteca Personale</span>
                     </div>
                 </div>
 
                 <div>
-                    <button class="navbar-toggler border border-black border-2 rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <button class="navbar-toggler border border-dark border-2 rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -71,22 +71,29 @@
 
                         <li class="nav-item ms-3">
                             <a class="nav-item nav-link d-flex flex-column align-items-center active" href="index.php">
-                                <img src="img/books2.png" class="menu-icon mb-1" alt="">                            
+                                <img src="img/home_red.png" class="menu-icon mb-1" alt="">                            
                                 <span class="fw-medium">Home</span>
                             </a>
                         </li>
 
                         <li class="nav-item ms-3">
                             <a class="nav-item nav-link d-flex flex-column align-items-center" href="libri.php">
-                                <img src="img/books3.png" class="menu-icon mb-1" alt="">
+                                <img src="img/libri_red.png" class="menu-icon mb-1" alt="">
                                 <span class="fw-medium">Libri</span>
                             </a>
                         </li>
 
                         <li class="nav-item ms-3">
                             <a class="nav-item nav-link d-flex flex-column align-items-center" href="contatti.php">
-                                <img src="img/person.png" class="menu-icon mb-1" alt="">
+                                <img src="img/contatti_red.png" class="menu-icon mb-1" alt="">
                                 <span class="fw-medium">Contatti</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item ms-3">
+                            <a class="nav-item nav-link d-flex flex-column align-items-center" href="chatbot.php">
+                                <img src="img/chatbot_red.png" class="menu-icon mb-1" alt="">
+                                <span class="fw-medium">Chatbot</span>
                             </a>
                         </li>
 

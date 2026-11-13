@@ -35,7 +35,16 @@
 
     <!-- Script -->
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dati PHP convertiti in JSON -->
+    <script type="application/json" id="datiLibri">
+        <?= json_encode($libri, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>
+    </script>
+
+    <!-- Legge il Json -->
+    <script src="js/libri.js"></script>
 
 </body>
 

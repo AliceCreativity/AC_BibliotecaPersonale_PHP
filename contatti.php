@@ -19,7 +19,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
 
                 <div class="col">
-                    <div class="card">
+                    <div class="card border-dark">
                         <div class="card-content p-4">   
 
                             <h3>
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="col">
-                    <div class="card">
+                    <div class="card border-dark">
                         <div class="card-content p-4">
 
                             <h3>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="col">
-                    <div class="card">
+                    <div class="card border-dark">
                         <div class="card-content p-4">
 
                             <h3>

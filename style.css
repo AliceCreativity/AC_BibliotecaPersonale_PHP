@@ -1,3 +1,65 @@
+/*** VARIABILI ***/
+
+:root {
+    /* PRIMARY */
+    --bs-primary: #d3003f;
+    --bs-primary-rgb: 211, 0, 63;
+
+    /* SECONDARY */
+    /* --bs-secondary: #4a2c2a; */
+    --bs-secondary: #392524;
+    --bs-secondary-rgb: 74, 44, 42;
+    --bs-secondary-color: #4a2c2a;
+
+    /* DANGER */
+    --bs-danger: #9e1316;
+    --bs-danger-rgb: 158, 19, 22;
+
+    /* DARK */
+    --bs-dark: #560e0a;
+    --bs-dark-rgb: 86, 14, 10;
+
+    /* LIGHT */
+    --bs-light: #f8f3f2;
+    --bs-light-rgb: 248, 243, 242;
+
+    /* BODY */
+    --bs-body-bg: #f8f3f2;
+    --bs-body-bg-rgb: 248, 243, 242;
+
+    --bs-body-color: #560e0a;
+    --bs-body-color-rgb: 86, 14, 10;
+
+    /* LINK */
+    --bs-link-color: #d3003f;
+    --bs-link-color-rgb: 211, 0, 63;
+
+    --bs-link-hover-color: #9e1316;
+    --bs-link-hover-color-rgb: 158, 19, 22;
+
+    /* COLORI AGGIUNTIVI */
+    --color-surface: #fffafa;
+    --color-accent: #800000;
+    --color-soft-accent: #cd5c5c;
+    --color-primary-hover: #9e1316;
+}
+
+.navbar {
+    /* --bs-navbar-brand-color: #9e1316; */
+    --bs-navbar-brand-color: #560e0a;
+}
+
+.nav-link {
+    /* --bs-nav-link-color: #9e1316; */
+    --bs-nav-link-color: #560e0a;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    --bs-navbar-active-color: #4a2c2a;
+}
+
+
 /*** GENERALE ***/
 
 * {
@@ -7,7 +69,7 @@
 }
 
 .page-container {
-
+    
 }
 
 
@@ -15,6 +77,11 @@
 
 .text-justify {
     text-align: justify;
+}
+
+.link-dark:hover {
+    color: var(--color-accent) !important;
+    text-decoration-color: var(--color-accent) !important;
 }
 
 
@@ -25,30 +92,78 @@ nav img {
     height: 50px;
 }
 
+.navbar-brand {
+    color: var(--bs-navbar-brand-color) !important;
+}
+
+
 /* effetto hover icone */
 
 a.navbar-brand,
 a.nav-link {
     transition: transform 0.3s ease;
-} 
+}
 
 a.navbar-brand:hover,
 a.nav-link:hover {
     transition: transform 0.3s ease;
     transform: scale(1.2);
-} 
+}
 
 
 
-/*** LIBRI ***/
+/*** TABELLE ***/
 
-/** tabella libri **/
+.table-dark {
+    --bs-table-color: var(--bs-light);
+    --bs-table-bg: var(--bs-dark);
+    --bs-table-border-color: var(--bs-secondary);
+    --bs-table-striped-bg: var(--color-accent);
+    --bs-table-striped-color: var(--bs-light);
+    --bs-table-active-bg: var(--bs-secondary);
+    --bs-table-active-color: var(--bs-light);
+    --bs-table-hover-bg: var(--color-primary-hover);
+    --bs-table-hover-color: var(--bs-light);
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+}
+
+.table-light {
+    --bs-table-color: var(--bs-secondary);
+    --bs-table-bg: var(--color-surface);
+    --bs-table-border-color: color-mix(in srgb, var(--color-surface), var(--bs-dark) 24%);
+    --bs-table-striped-bg: color-mix(in srgb, var(--color-surface), var(--bs-dark) 4%);
+    --bs-table-striped-color: var(--bs-secondary);
+    --bs-table-active-bg: color-mix(in srgb, var(--color-surface), var(--bs-dark) 10%);
+    --bs-table-active-color: var(--bs-body-color);
+    --bs-table-hover-bg: color-mix(in srgb, var(--color-surface), var(--bs-dark) 7%);
+    --bs-table-hover-color: var(--bs-body-color);
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+}
+
+/*.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-color-type: var(--bs-table-striped-color);
+    --bs-table-bg-type: var(--bs-table-striped-bg);
+}*/
+
+.table > :not(caption) > * > * {
+    color: var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color)));
+    background-color: var(--bs-table-bg);
+    border-bottom-width: var(--bs-border-width);
+}
+
+/** Tabella libri **/
+
+table .tabellaLibri {
+    font-size: 0.85em;
+}
 
 .tabellaLibri thead tr th:first-child {
     min-width: 80px;
 }
 
-.tabellaLibri thead tr th.colIndicatore, 
+.tabellaLibri thead tr th.colIndicatore,
 .tabellaLibri thead tr td.colIndicatore {
     width: 30px;
     text-align: center;
@@ -58,10 +173,157 @@ a.nav-link:hover {
     text-decoration: underline;
 }
 
-/* modale tabella libri */
-
-.modaleLibro {
-
+.tabellaLibri .iconaDisponibilita {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
+
+
+/*** MODALI ***/
+
+/** Modale tabella libri **/
+
+.modaleLibro .modaleLibroLabel {
+    font-weight: 400;
+}
+
+.modaleLibro .container-copertina {
+    height: 50vh;
+}
+
+/* Miniature */
+
+.modaleLibro .galleriaLibro img {
+    max-height: 30vh;
+    cursor: zoom-in;
+}
+
+/* Lightbox a tutto schermo */
+
+.lightboxLibro {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    padding: 0;
+    border: none;
+    width: 100vw;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+/* Contenitore dell'immagine */
+
+.contenutoLightbox {
+    width: 100%;
+    height: 100%;
+}
+
+/* Immagine ingrandita */
+
+.immagineLightbox {
+    max-width: calc(100vw - 120px);
+    max-height: 90dvh;
+    object-fit: contain;
+}
+
+/* Frecce di navigazione */
+
+.fotoPrecedente,
+.fotoSuccessiva {
+    width: 44px;
+    height: 44px;
+    z-index: 1;
+}
+
+/*** CHATBOT ***/
+
+.chat-main-card,
+.chat-container {
+    height: 750px;
+    max-height: 85vh;
+}
+
+.chat-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--color-soft-accent);
+    border-radius: 9999px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.chat-avatar-header {
+    width: 44px;
+    height: 44px;
+}
+
+.chat-avatar {
+    width: 60px;
+    height: 60px;
+}
+
+.chat-msg-row {
+    max-width: 85%;
+}
+
+.chat-send-icon {
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    margin-top: -2px;
+}
+
+.btn-link.text-dark:hover {
+    color: var(--color-primary-hover) !important;
+}
+
+
+
+/*** COLORI PERSONALIZZATI ***/
+
+.bg-surface {
+    background-color: var(--color-surface) !important;
+}
+
+.bg-accent {
+    background-color: var(--color-accent) !important;
+}
+
+.text-accent {
+    color: var(--color-accent) !important;
+}
+
+.bg-soft-accent {
+    background-color: var(--color-soft-accent) !important;
+}
+
+.text-soft-accent {
+    color: var(--color-soft-accent) !important;
+}
+
+.border-soft-accent {
+    border-color: var(--color-soft-accent) !important;
+}
+
+.border-dark {
+    border-color: var(--bs-dark) !important;
+}
+
+.bg-body-color {
+    background-color: var(--bs-body-color) !important;
+}
+
+.pagination {
+    --bs-pagination-color: var(--bs-color-accent) !important;
+    --bs-pagination-active-bg: var(--color-accent) !important;
+    --bs-pagination-active-border-color: var(--color-accent) !important;
+}
 

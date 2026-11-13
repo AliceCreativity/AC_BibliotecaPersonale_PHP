@@ -1,7 +1,12 @@
 .env
+.env*
 
 config.php
 queries.php
 
 *_a.*
 _*
+
+in/
+node_modules
+.vs*
