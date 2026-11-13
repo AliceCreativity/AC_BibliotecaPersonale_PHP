@@ -2,7 +2,8 @@
 
 /* Controllo l'ambiente in cui sta girando il sito */
 
-$environment = ($_SERVER['HTTP_HOST'] === 'localhost') ? 'sviluppo' : 'produzione';
+$requestHost = parse_url('http://' . ($_SERVER['HTTP_HOST'] ?? ''), PHP_URL_HOST);
+$environment = in_array($requestHost, ['localhost', '127.0.0.1'], true) ? 'sviluppo' : 'produzione';
 
 //echo 'ambiente: ' . $environment . '<br><br>'; // solo per test
 
